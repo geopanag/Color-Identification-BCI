@@ -1,4 +1,4 @@
------------------------------------Color Identification Brain Computer Interface--------------------------------------
+Color Identification Brain Computer Interface
 An experiment to classify whether a subject sees a black or a white image, given his brain activity on Emotiv Epoc+ BCI.
 
 Experiment.m
