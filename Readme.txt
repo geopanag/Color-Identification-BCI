@@ -21,11 +21,10 @@ Preprocess.m
 5.	Build a dataset from these vectors and save it (it must have the same row size as the length of the label vector from the same experiment).
 
 Train.m
-1.	Create novel or define existing machine learning algorithms.
+1.	Create novel or define existing machine learning algorithms (in this case, a shrinkage LDA).
 2.	Load the preprocessed dataset and the labels.
 3.	Train the algorithm on this dataset.
 4.	Save the model parameters.
-5.	(Optional) Run K fold cross validation to estimate error.
 
 BCI.m
 1.	Connect to emotiv epoc+ through EmoEngine.
@@ -33,8 +32,8 @@ BCI.m
 3.	Start a recording for time equal to the trial time of the experiment.
 4.	Choose a random color and show respective picture.
 5.	Record eeg activity to matrix with size=TrialTime*SampleFrequency X No. Channel.
-6.	Run signal processing and feature extraction to derive the vector of features.
-7.	Classify that vector using the model from 2.
-8.	Show the classification outcome with a pretty message.
+6.	Run the same signal processing and feature extraction as in Preprocess.m to derive the vector of features.
+7.	Classify that vector using the model from 2, using Predict.m.
+8.	Show the classification outcome with an enthousiastic message.
 
 **Libraries to connect with Epoc+ are not included.

@@ -1,4 +1,4 @@
-function model = TrainLDA(DatasetName,ModelName,lambda,sigma)
+function model = Train(DatasetName,ModelName,lambda,sigma)
 
     data=load(strcat(DatasetName,'.mat'));
 

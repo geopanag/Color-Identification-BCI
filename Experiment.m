@@ -1,16 +1,12 @@
 function EegMatrix = Experiment(ExperimentTime,TrialTime,DatasetName,TrainedChannels,Colors)
-    %colors=randi([0 1],20,1);
-    %Init variables
+    
 
     %%%the experiment time is not strictly related to the trial time, e.g. 
     %%%ExperimentTime=35 and TrialTime=5, does not mean necessarily that there
     %%%will be seven trials, as there is overhead in the prossessing between the trials.
     
-    colors=randi([0 1],20,1); %then subtrack with 0.5
     
-%    some default values
-    
-
+%Init variables
     SampFreq=128; %sampling 
     rectime = 1;%buffer data size (in sec)
     TrainLabels=[];

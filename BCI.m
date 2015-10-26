@@ -146,7 +146,7 @@ function BCI(ModelName,TrialTime,TrainedChannels,FeatsPerChannel)
 
     model=load(strcat(ModelName,'.mat'));
     
-    x=PredictLDA(row,model);
+    x=Predict(row,model);
     if(x>0)
         msgbox('WHITE!!!');
     else
