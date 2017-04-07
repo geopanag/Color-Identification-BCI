@@ -7,7 +7,7 @@ function model = SrinkageLDA(dataset,train_labels,lambda,sigma)
     m2=mean(C2,1);
     cov1=cov(C1);%or (C1-m1(ones(size(C1,1),1),:))*(C1-m1(ones(size(C1,1),1),:))';
     cov2=cov(C2);
-    %apply shrinkage to the covariance matrixes
+    %apply shrinkage to the covariance matrices
     S1=(1-lambda)*cov1+lambda*sigma*eye(size(C1,2));
     S2=(1-lambda)*cov2+lambda*sigma*eye(size(C2,2));
     %define the theta and constant
